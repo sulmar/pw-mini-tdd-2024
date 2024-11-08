@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+			<Title>Test Method</Title>
+			<Author>Marcin Sulecki</Author>
+			<Description>Generates test method Method_Scenario_ExptectedBehavior</Description>
+			<Shortcut>tm</Shortcut>
+		</Header>
+
+		<Snippet>
+
+			<Declarations>
+				<Literal Editable="true">
+					<ID>Method</ID>
+					<Default>Method</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>Scenario</ID>
+					<Default>Scenario</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>Behavior</ID>
+					<Default>ExpectedBehavior</Default>
+				</Literal>
+			</Declarations>
+
+			<Code Language="csharp">
+				<![CDATA[[Fact]
+        public void $Method$_$Scenario$_$Behavior$()
+        {
+	       // Arrange
+
+           // Act
+
+           // Assets
+			throw new NotImplementedException();
+        }]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+			<Title>Test Async Method</Title>
+			<Author>Marcin Sulecki</Author>
+			<Description>Generates async test method MethodAsync_Scenario_ExptectedBehavior</Description>
+			<Shortcut>tma</Shortcut>
+		</Header>
+
+		<Snippet>
+
+			<Declarations>
+				<Literal Editable="true">
+					<ID>Method</ID>
+					<Default>Method</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>Scenario</ID>
+					<Default>Scenario</Default>
+				</Literal>
+				<Literal Editable="true">
+					<ID>Behavior</ID>
+					<Default>ExpectedBehavior</Default>
+				</Literal>
+			</Declarations>
+
+			<Code Language="csharp">
+				<![CDATA[[Fact]
+        public async Task $Method$_$Scenario$_$Behavior$()
+        {
+	       // Arrange
+
+           // Act
+
+           // Assets
+		   throw new NotImplementedException();
+
+        }]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+
+</CodeSnippets>
